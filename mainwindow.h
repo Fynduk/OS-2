@@ -15,6 +15,13 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_lineEdit_editingFinished();
+
+    void on_lineEdit_2_editingFinished();
+
+    void on_lineEdit_3_editingFinished();
+
 private:
     Ui::MainWindow *ui;
 };
