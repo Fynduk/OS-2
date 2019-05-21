@@ -15,15 +15,13 @@ ProcB::~ProcB()
 
 void ProcB::Start()
 {
-
     timer->start();
     for (double i = 0; i < 1; i+=0.1) {
         emit sendUpdateProgressBar(2, i*100);
         m_thread.msleep(500);
     }
-    bool boolAnswer = m_r1 | m_r2 & m_r3;
-    QString answer = QString::number(boolAnswer);
-    emit sendInfoB('B', "A", "???", 0, timer->elapsed(), answer);
+    bool boolAnswer = (m_r1 | m_r2) & m_r3;
+    emit sendInfoB('B', "A", "???", 0, timer->elapsed(), QString::number(boolAnswer));
     emit sendUpdateProgressBar(2, 100);
 }
 

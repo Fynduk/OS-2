@@ -28,12 +28,26 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
         proca.cpp \
-        procb.cpp
+        procb.cpp \
+        procc.cpp \
+        procd.cpp \
+        proce.cpp \
+        procf.cpp \
+        procg.cpp \
+        proch.cpp \
+        prock.cpp
 
 HEADERS += \
         mainwindow.h \
         proca.h \
-        procb.h
+        procb.h \
+        procc.h \
+        procd.h \
+        proce.h \
+        procf.h \
+        procg.h \
+        proch.h \
+        prock.h
 
 FORMS += \
         mainwindow.ui

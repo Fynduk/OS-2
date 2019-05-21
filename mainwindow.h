@@ -4,6 +4,13 @@
 #include <QMainWindow>
 #include <proca.h>
 #include <procb.h>
+#include <procc.h>
+#include <procd.h>
+#include <proce.h>
+#include <procf.h>
+#include <procg.h>
+#include <proch.h>
+#include <prock.h>
 
 namespace Ui {
 class MainWindow;
@@ -31,21 +38,28 @@ signals:
     void sendInfoToProcB(bool, bool, bool);
     void sendInfoToProcC(bool, bool, bool);
     void sendInfoToProcD(bool, bool, bool);
+    void sendInfoToProcE(bool);
+    void sendInfoToProcF(bool, bool, bool);
+    void sendInfoToProcG(bool, bool, bool);
+    void sendInfoToProcH(bool, bool, bool);
+    void sendInfoToProcK(bool, bool, bool);
 
 private:
     Ui::MainWindow *ui;
     bool m_r1 = true;
     bool m_r2 = false;
     bool m_r3 = true;
+
+    QVector<char> m_vec;
     ProcA* procA = new ProcA(nullptr);
     ProcB* procB = new ProcB(nullptr);
-//    ProcA* procC = new ProcC(nullptr);
-//    ProcA* procD = new ProcD(nullptr);
-//    ProcA* procA = new ProcA(nullptr);
-//    ProcA* procA = new ProcA(nullptr);
-//    ProcA* procA = new ProcA(nullptr);
-//    ProcA* procA = new ProcA(nullptr);
-//    ProcA* procA = new ProcA(nullptr);
+    ProcC* procC = new ProcC(nullptr);
+    ProcD* procD = new ProcD(nullptr);
+    ProcE* procE = new ProcE(nullptr);
+    ProcF* procF = new ProcF(nullptr);
+    ProcG* procG = new ProcG(nullptr);
+    ProcH* procH = new ProcH(nullptr);
+    ProcK* procK = new ProcK(nullptr);
 };
 
 #endif // MAINWINDOW_H
