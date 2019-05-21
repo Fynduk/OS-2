@@ -26,10 +26,14 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        proca.cpp \
+        procb.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+        proca.h \
+        procb.h
 
 FORMS += \
         mainwindow.ui
